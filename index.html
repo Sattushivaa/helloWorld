@@ -4,11 +4,14 @@
 Satyam
 <iframe I'd="myframe" src="https://sattushivaa.github.io"></iframe>
 <input type="text" id="url" />
+<button id="save">Change</button>
 <script>
 var frame1 = document.getElementById("myframe");
 var frameurl = document.getElementById("url");
-frameurl.addEventListener("change",(e)=>{
-  frame1.src = e.target.value;
+var BTN = document.getElementById("save");
+BTN.addEventListener("click",(e)=>{
+  frame1.src = frameurl.value;
+  body.innerHTML += "done\n";
 });
 </script>
 </body>
