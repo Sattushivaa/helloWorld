@@ -2,6 +2,14 @@
 <head><title>iframe</title></head>
 <body>
 Satyam
-<iframe src="https://sattushivaa.github.io"></iframe>
+<iframe I'd="myframe" src="https://sattushivaa.github.io"></iframe>
+<input type="text" id="url" />
+<script>
+var frame1 = document.getElementById("myframe");
+var frameurl = document.getElementById("url");
+frameurl.addEventListener("change",(e)=>{
+  frame1.src = e.target.value;
+});
+</script>
 </body>
 </html>
