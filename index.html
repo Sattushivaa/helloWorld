@@ -11,7 +11,8 @@ var frameurl = document.getElementById("url");
 var BTN = document.getElementById("save");
 BTN.addEventListener("click",(e)=>{
   frame1.src = frameurl.value;
-  body.innerHTML += "done\n";
+  frame1.contentWindow.location.reload();
+  document.body.innerHTML += "done";
 });
 </script>
 </body>
